@@ -1,0 +1,54 @@
+{
+    "input": [
+        {
+            "name": "pdfTemplate",
+            "type": "model",
+            "reference": "model.PdfTemplate"
+        }
+    ],
+    "output": [
+        {
+            "name": "multipartFile",
+            "type": "model",
+            "reference": "io.toro.martini.http.MultipartFile"
+        }
+    ],
+    "steps": [
+        {
+            "type": "invokeCode",
+            "className": "service.groovy.PdfMaker",
+            "methodName": "create",
+            "parameters": [
+                "io.toro.gloop.object.property.GloopModel"
+            ],
+            "inputs": [
+                {
+                    "from": [
+                        "pdfTemplate"
+                    ],
+                    "to": [
+                        "template"
+                    ]
+                }
+            ],
+            "outputs": [
+                {
+                    "type": "set",
+                    "expression": "application/pdf",
+                    "to": [
+                        "multipartFile",
+                        "contentType"
+                    ]
+                },
+                {
+                    "from": [
+                        "multipartFile"
+                    ],
+                    "to": [
+                        "multipartFile"
+                    ]
+                }
+            ]
+        }
+    ]
+}

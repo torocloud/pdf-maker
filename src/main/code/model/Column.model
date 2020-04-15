@@ -1,0 +1,88 @@
+{
+    "name": "Column",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "paddingTop",
+            "type": "float",
+            "defaultValue": 2.0
+        },
+        {
+            "name": "paddingBottom",
+            "type": "float",
+            "defaultValue": 2.0
+        },
+        {
+            "name": "paddingRight",
+            "type": "float",
+            "defaultValue": 2.0
+        },
+        {
+            "name": "paddingLeft",
+            "type": "float",
+            "defaultValue": 2.0
+        },
+        {
+            "name": "horizontalAlignment",
+            "choices": [
+                "TOP",
+                "BOTTOM",
+                "CENTER",
+                "LEFT",
+                "RIGHT"
+            ]
+        },
+        {
+            "name": "verticalAlignment",
+            "choices": [
+                "TOP",
+                "BOTTOM",
+                "CENTER",
+                "LEFT",
+                "RIGHT"
+            ]
+        },
+        {
+            "name": "fixedHeight",
+            "type": "float",
+            "defaultValue": 0.0
+        },
+        {
+            "name": "indent",
+            "type": "float",
+            "defaultValue": 0.0
+        },
+        {
+            "name": "relativeWidth",
+            "type": "float"
+        },
+        {
+            "name": "border",
+            "type": "model",
+            "reference": "model.Border"
+        },
+        {
+            "name": "element",
+            "type": "model",
+            "reference": "model.Element",
+            "gloopProperties": [
+                {
+                    "name": "font",
+                    "type": "model",
+                    "reference": "model.Font"
+                }
+            ]
+        },
+        {
+            "name": "backgroundColor",
+            "type": "model",
+            "reference": "model.Color"
+        },
+        {
+            "name": "rows",
+            "type": "model",
+            "array": true,
+            "reference": "model.Row"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Border",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "width",
+            "type": "float"
+        },
+        {
+            "name": "top",
+            "type": "boolean"
+        },
+        {
+            "name": "bottom",
+            "type": "boolean"
+        },
+        {
+            "name": "right",
+            "type": "boolean"
+        },
+        {
+            "name": "left",
+            "type": "boolean"
+        },
+        {
+            "name": "baseColor",
+            "type": "model",
+            "reference": "model.Color"
+        }
+    ]
+}

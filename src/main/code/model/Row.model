@@ -1,0 +1,17 @@
+{
+    "name": "Row",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "paddingTop",
+            "type": "float",
+            "defaultValue": 2.0
+        },
+        {
+            "name": "columns",
+            "type": "model",
+            "array": true,
+            "reference": "model.Column"
+        }
+    ]
+}

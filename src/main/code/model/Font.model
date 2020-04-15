@@ -1,0 +1,38 @@
+{
+    "name": "Font",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "family",
+            "defaultValue": "HELVETICA",
+            "choices": [
+                "COURIER",
+                "HELVETICA",
+                "TIMES_ROMAN",
+                "SYMBOL",
+                "ZAPFDINGBATS"
+            ]
+        },
+        {
+            "name": "size",
+            "type": "float"
+        },
+        {
+            "name": "style",
+            "defaultValue": "NORMAL",
+            "choices": [
+                "NORMAL",
+                "BOLD",
+                "ITALIC",
+                "OBLIQUE",
+                "UNDERLINE",
+                "LINETHROUGH"
+            ]
+        },
+        {
+            "name": "baseColor",
+            "type": "model",
+            "reference": "model.Color"
+        }
+    ]
+}

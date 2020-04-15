@@ -1,0 +1,45 @@
+{
+    "name": "Color",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "type",
+            "required": true,
+            "allowNull": false,
+            "choices": [
+                "WHITE",
+                "LIGHT_GRAY",
+                "GRAY",
+                "DARK_GRAY",
+                "BLACK",
+                "RED",
+                "PINK",
+                "ORANGE",
+                "YELLOW",
+                "GREEN",
+                "MAGENTA",
+                "CYAN",
+                "BLUE",
+                "CUSTOM"
+            ]
+        },
+        {
+            "name": "red",
+            "type": "integer",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "green",
+            "type": "integer",
+            "min": 0,
+            "max": 255
+        },
+        {
+            "name": "blue",
+            "type": "integer",
+            "min": 0,
+            "max": 255
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+<package stateOnStartup="started" id="pdf-maker" version="1.0.0" context-path="/pdf-maker">
+  <package-dependencies/>
+  <startup-services/>
+  <shutdown-services/>
+</package>

@@ -1,0 +1,27 @@
+{
+    "info": {
+        "version": "1.0.0-SNAPSHOT"
+    },
+    "basePath": "/pdf-maker",
+    "paths": {
+        "/create": {
+            "post": {
+                "produces": [
+                    "application/pdf"
+                ],
+                "bodyParameter": {
+                    "name": "pdfTemplate",
+                    "description": "pdfTemplate"
+                },
+                "responses": {
+                    "200": {
+                        "body": "multipartFile",
+                        "description": "The created pdf file"
+                    }
+                },
+                "operationType": "gloop",
+                "operationLocation": "service.GeneratePdf"
+            }
+        }
+    }
+}

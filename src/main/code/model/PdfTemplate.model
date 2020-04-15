@@ -1,0 +1,51 @@
+{
+    "name": "PdfTemplate",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "pageMarginTop",
+            "type": "float"
+        },
+        {
+            "name": "pageMarginBottom",
+            "type": "float"
+        },
+        {
+            "name": "pageMarginRight",
+            "type": "float"
+        },
+        {
+            "name": "pageMarginLeft",
+            "type": "float"
+        },
+        {
+            "name": "pageSize",
+            "required": true,
+            "allowNull": false,
+            "defaultValue": "LETTER",
+            "choices": [
+                "LETTER",
+                "NOTE",
+                "LEGAL",
+                "TABLOID",
+                "EXECUTIVE",
+                "POSTCARD",
+                "A0",
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A7",
+                "A8",
+                "A10",
+                "LEDGER"
+            ]
+        },
+        {
+            "name": "body",
+            "type": "model",
+            "array": true,
+            "reference": "model.Row"
+        }
+    ]
+}

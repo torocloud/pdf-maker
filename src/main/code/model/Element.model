@@ -1,0 +1,29 @@
+{
+    "name": "Element",
+    "type": "model",
+    "gloopProperties": [
+        {
+            "name": "type",
+            "required": true,
+            "allowNull": false,
+            "choices": [
+                "TEXT",
+                "IMAGE"
+            ]
+        },
+        {
+            "name": "value",
+            "type": "object",
+            "required": true,
+            "allowNull": false
+        },
+        {
+            "name": "width",
+            "type": "float"
+        },
+        {
+            "name": "height",
+            "type": "float"
+        }
+    ]
+}
